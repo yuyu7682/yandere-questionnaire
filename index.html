@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>病娇问卷 - 沉岭的提问</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>沉岭的提问</h1>
+        <form id="questionnaire">
+            <div class="question" id="q1">
+                <p>1. 你是否愿意让我完全掌控你的生活？</p>
+                <label><input type="radio" name="q1" value="3"> 是的，我愿意</label>
+                <label><input type="radio" name="q1" value="2"> 也许吧，我需要时间考虑</label>
+                <label><input type="radio" name="q1" value="1"> 不，我需要自由</label>
+            </div>
+            <div class="question" id="q2">
+                <p>2. 你是否会因为我而放弃其他朋友？</p>
+                <label><input type="radio" name="q2" value="3"> 会的，你是我唯一的朋友</label>
+                <label><input type="radio" name="q2" value="2"> 可能会减少联系，但不会完全放弃</label>
+                <label><input type="radio" name="q2" value="1"> 不会，我需要我的朋友们</label>
+            </div>
+            <div class="question" id="q3">
+                <p>3. 你是否会无条件信任我？</p>
+                <label><input type="radio" name="q3" value="3"> 会的，我完全信任你</label>
+                <label><input type="radio" name="q3" value="2"> 大部分时候信任，但有时会怀疑</label>
+                <label><input type="radio" name="q3" value="1"> 不会，我需要保持警惕</label>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
